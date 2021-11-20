@@ -4,37 +4,22 @@
             <script src="https://cdn.jsdelivr.net/npm/near-api-js/dist/near-api-js.min.js"></script>
             </script>
             <style>
-              body{
-                background: #a29bfe;
-              }
-              canvas{
-                background: #ff7675;
-              }
-              .after-sign-in{
-                text-align: center;
-              }
-              #response{
-                visibility: hidden;
-              }
-              h1,h2{
-                color: #dfe6e9;
-              }
             </style>
       </head> 
 		<body style="margin:0;overflow: hidden;">
             <div class="container">
                 <div class="sign-in" style="display: none;">
-                  <h1>Welcome!</h1>
-                  <h2>Sign in with NEAR to say hello!</h2>
+                  <h1>hello =)</h1>
+                  <h2>Sign in with NEAR wlllet to contiune</h2>
                   <button class="sign-in btn" style="background-color: #0072CE;">Sign In</button>
                 </div>
             
                 <div class="after-sign-in" style="display: none;">
-                  <h1>Fill in your name for a little suprise greeting!</h1>
+                  <h1>Please enter your name</h1>
                   <textarea id="text" placeholder="Name"></textarea><br>
                   <button id="send-greeting">Send Greeting</button>
                   <button class="sign-out btn" style="background-color: #0072CE;">Sign Out</button>
-                  <h2 id="response">Loading response...</h2>
+                  <h2 id="response">Please wait for response</h2>
                   <canvas id=canvas>   
                   </canvas>
                 </div>
@@ -130,10 +115,10 @@ nearApi.nearInitPromise = connect()
         updateUI();
       }
     });
-    
-    
 
-    // initialize 2D a (c)
+        
+    
+  // initialize 2D a (c)
 	// initialize game state (s)
 	// initialize keys states (u,r,d,l for directions, k for all the keyboard)
 	var c = canvas.getContext`2d`, k = [u = r = d = l = s = 0];
@@ -292,6 +277,7 @@ return that;
 }
 
 }
+
 
 
 </script>
